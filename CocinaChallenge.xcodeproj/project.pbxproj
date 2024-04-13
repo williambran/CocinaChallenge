@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CBEC4C62BCA50EF0083B42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */; };
+		5CBEC4C82BCA50EF0083B42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */; };
+		5CBEC4CA2BCA50EF0083B42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C92BCA50EF0083B42E /* ViewController.swift */; };
+		5CBEC4CD2BCA50EF0083B42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4CB2BCA50EF0083B42E /* Main.storyboard */; };
+		5CBEC4CF2BCA50F00083B42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */; };
+		5CBEC4D22BCA50F00083B42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */; };
+		5CBEC4DD2BCA50F00083B42E /* CocinaChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */; };
+		5CBEC4E72BCA50F00083B42E /* CocinaChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */; };
+		5CBEC4E92BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CBEC4D92BCA50F00083B42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBEC4BA2BCA50EE0083B42E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBEC4C12BCA50EE0083B42E;
+			remoteInfo = CocinaChallenge;
+		};
+		5CBEC4E32BCA50F00083B42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBEC4BA2BCA50EE0083B42E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBEC4C12BCA50EE0083B42E;
+			remoteInfo = CocinaChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CBEC4C22BCA50EF0083B42E /* CocinaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocinaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CBEC4C92BCA50EF0083B42E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CBEC4CC2BCA50EF0083B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CBEC4D12BCA50F00083B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CBEC4D32BCA50F00083B42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBEC4D82BCA50F00083B42E /* CocinaChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeTests.swift; sourceTree = "<group>"; };
+		5CBEC4E22BCA50F00083B42E /* CocinaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeUITests.swift; sourceTree = "<group>"; };
+		5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CBEC4BF2BCA50EE0083B42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4D52BCA50F00083B42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4DF2BCA50F00083B42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CBEC4B92BCA50EE0083B42E = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4C42BCA50EF0083B42E /* CocinaChallenge */,
+				5CBEC4DB2BCA50F00083B42E /* CocinaChallengeTests */,
+				5CBEC4E52BCA50F00083B42E /* CocinaChallengeUITests */,
+				5CBEC4C32BCA50EF0083B42E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CBEC4C32BCA50EF0083B42E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4C22BCA50EF0083B42E /* CocinaChallenge.app */,
+				5CBEC4D82BCA50F00083B42E /* CocinaChallengeTests.xctest */,
+				5CBEC4E22BCA50F00083B42E /* CocinaChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CBEC4C42BCA50EF0083B42E /* CocinaChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */,
+				5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */,
+				5CBEC4C92BCA50EF0083B42E /* ViewController.swift */,
+				5CBEC4CB2BCA50EF0083B42E /* Main.storyboard */,
+				5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */,
+				5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */,
+				5CBEC4D32BCA50F00083B42E /* Info.plist */,
+			);
+			path = CocinaChallenge;
+			sourceTree = "<group>";
+		};
+		5CBEC4DB2BCA50F00083B42E /* CocinaChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */,
+			);
+			path = CocinaChallengeTests;
+			sourceTree = "<group>";
+		};
+		5CBEC4E52BCA50F00083B42E /* CocinaChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */,
+				5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */,
+			);
+			path = CocinaChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CBEC4C12BCA50EE0083B42E /* CocinaChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEC4EC2BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallenge" */;
+			buildPhases = (
+				5CBEC4BE2BCA50EE0083B42E /* Sources */,
+				5CBEC4BF2BCA50EE0083B42E /* Frameworks */,
+				5CBEC4C02BCA50EE0083B42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocinaChallenge;
+			productName = CocinaChallenge;
+			productReference = 5CBEC4C22BCA50EF0083B42E /* CocinaChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CBEC4D72BCA50F00083B42E /* CocinaChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEC4EF2BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallengeTests" */;
+			buildPhases = (
+				5CBEC4D42BCA50F00083B42E /* Sources */,
+				5CBEC4D52BCA50F00083B42E /* Frameworks */,
+				5CBEC4D62BCA50F00083B42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBEC4DA2BCA50F00083B42E /* PBXTargetDependency */,
+			);
+			name = CocinaChallengeTests;
+			productName = CocinaChallengeTests;
+			productReference = 5CBEC4D82BCA50F00083B42E /* CocinaChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CBEC4E12BCA50F00083B42E /* CocinaChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEC4F22BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallengeUITests" */;
+			buildPhases = (
+				5CBEC4DE2BCA50F00083B42E /* Sources */,
+				5CBEC4DF2BCA50F00083B42E /* Frameworks */,
+				5CBEC4E02BCA50F00083B42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBEC4E42BCA50F00083B42E /* PBXTargetDependency */,
+			);
+			name = CocinaChallengeUITests;
+			productName = CocinaChallengeUITests;
+			productReference = 5CBEC4E22BCA50F00083B42E /* CocinaChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CBEC4BA2BCA50EE0083B42E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					5CBEC4C12BCA50EE0083B42E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					5CBEC4D72BCA50F00083B42E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5CBEC4C12BCA50EE0083B42E;
+					};
+					5CBEC4E12BCA50F00083B42E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5CBEC4C12BCA50EE0083B42E;
+					};
+				};
+			};
+			buildConfigurationList = 5CBEC4BD2BCA50EE0083B42E /* Build configuration list for PBXProject "CocinaChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CBEC4B92BCA50EE0083B42E;
+			productRefGroup = 5CBEC4C32BCA50EF0083B42E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CBEC4C12BCA50EE0083B42E /* CocinaChallenge */,
+				5CBEC4D72BCA50F00083B42E /* CocinaChallengeTests */,
+				5CBEC4E12BCA50F00083B42E /* CocinaChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CBEC4C02BCA50EE0083B42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEC4D22BCA50F00083B42E /* LaunchScreen.storyboard in Resources */,
+				5CBEC4CF2BCA50F00083B42E /* Assets.xcassets in Resources */,
+				5CBEC4CD2BCA50EF0083B42E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4D62BCA50F00083B42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4E02BCA50F00083B42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CBEC4BE2BCA50EE0083B42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEC4CA2BCA50EF0083B42E /* ViewController.swift in Sources */,
+				5CBEC4C62BCA50EF0083B42E /* AppDelegate.swift in Sources */,
+				5CBEC4C82BCA50EF0083B42E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4D42BCA50F00083B42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEC4DD2BCA50F00083B42E /* CocinaChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEC4DE2BCA50F00083B42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEC4E72BCA50F00083B42E /* CocinaChallengeUITests.swift in Sources */,
+				5CBEC4E92BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CBEC4DA2BCA50F00083B42E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBEC4C12BCA50EE0083B42E /* CocinaChallenge */;
+			targetProxy = 5CBEC4D92BCA50F00083B42E /* PBXContainerItemProxy */;
+		};
+		5CBEC4E42BCA50F00083B42E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBEC4C12BCA50EE0083B42E /* CocinaChallenge */;
+			targetProxy = 5CBEC4E32BCA50F00083B42E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CBEC4CB2BCA50EF0083B42E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBEC4CC2BCA50EF0083B42E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBEC4D12BCA50F00083B42E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CBEC4EA2BCA50F00083B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CBEC4EB2BCA50F00083B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CBEC4ED2BCA50F00083B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CocinaChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CBEC4EE2BCA50F00083B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CocinaChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CBEC4F02BCA50F00083B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocinaChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CocinaChallenge";
+			};
+			name = Debug;
+		};
+		5CBEC4F12BCA50F00083B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocinaChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CocinaChallenge";
+			};
+			name = Release;
+		};
+		5CBEC4F32BCA50F00083B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocinaChallenge;
+			};
+			name = Debug;
+		};
+		5CBEC4F42BCA50F00083B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QNXMD5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocinaChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CBEC4BD2BCA50EE0083B42E /* Build configuration list for PBXProject "CocinaChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEC4EA2BCA50F00083B42E /* Debug */,
+				5CBEC4EB2BCA50F00083B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEC4EC2BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEC4ED2BCA50F00083B42E /* Debug */,
+				5CBEC4EE2BCA50F00083B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEC4EF2BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEC4F02BCA50F00083B42E /* Debug */,
+				5CBEC4F12BCA50F00083B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEC4F22BCA50F00083B42E /* Build configuration list for PBXNativeTarget "CocinaChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEC4F32BCA50F00083B42E /* Debug */,
+				5CBEC4F42BCA50F00083B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CBEC4BA2BCA50EE0083B42E /* Project object */;
+}
