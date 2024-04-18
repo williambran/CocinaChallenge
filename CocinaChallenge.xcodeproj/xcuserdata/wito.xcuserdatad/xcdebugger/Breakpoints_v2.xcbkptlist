@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9A725154-15B3-4656-91F8-E806F419FB3C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0927859E-3AE1-4ED5-9353-9FE08C98B7AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CocinaChallenge/Home/View/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78A1DFC3-E2A6-4CA5-B85C-FAE9D0A05AD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CocinaChallenge/Home/View/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "search(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78A1DFC3-E2A6-4CA5-B85C-FAE9D0A05AD0 - 3a685b94ba1fc905"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CocinaChallenge.HomeScreenViewController.search(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CocinaChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wito/Documents/ios_2024/CocinaChallenge/CocinaChallenge/Home/View/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "78A1DFC3-E2A6-4CA5-B85C-FAE9D0A05AD0 - 3a685b94ba1fc905"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CocinaChallenge.HomeScreenViewController.search(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CocinaChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wito/Documents/ios_2024/CocinaChallenge/CocinaChallenge/Home/View/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

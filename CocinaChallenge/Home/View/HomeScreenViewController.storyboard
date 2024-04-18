@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreenViewController" id="Y6W-OH-hqX" customClass="HomeScreenViewController" customModule="CocinaChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsF-rH-XBD">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="V2P-Jp-lXu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-Td-5az">
+                                <rect key="frame" x="0.0" y="300" width="430" height="632"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fOi-j2-io9">
+                                        <rect key="frame" x="205" y="306" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-3p-C8f">
+                                        <rect key="frame" x="215" y="334" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fOi-j2-io9" firstAttribute="centerY" secondItem="fhl-Td-5az" secondAttribute="centerY" id="5EA-iH-CsM"/>
+                                    <constraint firstItem="WOh-3p-C8f" firstAttribute="centerX" secondItem="fhl-Td-5az" secondAttribute="centerX" id="AUc-3T-S9j"/>
+                                    <constraint firstItem="fOi-j2-io9" firstAttribute="centerX" secondItem="fhl-Td-5az" secondAttribute="centerX" id="CeL-FG-oeS"/>
+                                    <constraint firstItem="WOh-3p-C8f" firstAttribute="top" secondItem="fOi-j2-io9" secondAttribute="bottom" constant="8" id="F35-ag-JlA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pcF-Jh-0TD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fhl-Td-5az" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="3lD-nO-q4R"/>
+                            <constraint firstItem="WsF-rH-XBD" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="9yG-IN-TXB"/>
+                            <constraint firstAttribute="trailing" secondItem="WsF-rH-XBD" secondAttribute="trailing" id="Dk1-fb-vh2"/>
+                            <constraint firstAttribute="trailing" secondItem="fhl-Td-5az" secondAttribute="trailing" id="Laa-Ms-B01"/>
+                            <constraint firstItem="fhl-Td-5az" firstAttribute="top" secondItem="WsF-rH-XBD" secondAttribute="bottom" id="Uiu-A3-C5x"/>
+                            <constraint firstAttribute="bottom" secondItem="fhl-Td-5az" secondAttribute="bottom" id="nLM-df-cAr"/>
+                            <constraint firstItem="WsF-rH-XBD" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="njP-T6-dLP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contenListView" destination="fhl-Td-5az" id="lUC-bu-1cV"/>
+                        <outlet property="headerConstraint" destination="V2P-Jp-lXu" id="LUc-WI-fq5"/>
+                        <outlet property="headerView" destination="WsF-rH-XBD" id="3xi-oE-dVg"/>
+                        <outlet property="loading" destination="fOi-j2-io9" id="dIx-3D-e5z"/>
+                        <outlet property="resultSearchLbl" destination="WOh-3p-C8f" id="Qya-cd-Qf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="-16.197183098591552"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

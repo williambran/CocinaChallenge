@@ -7,15 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4A22972BCDECAF00E76D7C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22962BCDECAF00E76D7C /* UIViewController.swift */; };
+		5C4A229E2BCDF2C900E76D7C /* QueryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A229D2BCDF2C900E76D7C /* QueryListTableViewController.swift */; };
+		5C4A22A02BCDF32C00E76D7C /* QueryListTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4A229F2BCDF32C00E76D7C /* QueryListTableViewController.storyboard */; };
+		5C4A22A22BCDF3E000E76D7C /* QueryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22A12BCDF3E000E76D7C /* QueryListPresenter.swift */; };
+		5C4A22A42BCDF3E900E76D7C /* QueryListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22A32BCDF3E900E76D7C /* QueryListPresenterProtocol.swift */; };
+		5C4A22A62BCE1F4E00E76D7C /* RecetaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4A22A52BCE1F4E00E76D7C /* RecetaTableViewCell.xib */; };
+		5C4A22A82BCE1FA100E76D7C /* RecetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22A72BCE1FA100E76D7C /* RecetaTableViewCell.swift */; };
+		5C4A22AA2BCE329600E76D7C /* RecetaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4A22A92BCE329600E76D7C /* RecetaCollectionViewCell.xib */; };
+		5C4A22AC2BCE32EC00E76D7C /* RecetaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22AB2BCE32EC00E76D7C /* RecetaCollectionViewCell.swift */; };
+		5C4A22AF2BCE4DB200E76D7C /* ImageRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22AE2BCE4DB200E76D7C /* ImageRequestManager.swift */; };
+		5C4A22B12BCE5E5900E76D7C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A22B02BCE5E5900E76D7C /* UIViewExtension.swift */; };
+		5C4E3D692BCBCF3400F0B54F /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E3D682BCBCF3400F0B54F /* SplashStoryboard.storyboard */; };
+		5C4E3D752BCC694900F0B54F /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D742BCC694900F0B54F /* HomeScreenViewController.swift */; };
+		5C4E3D772BCC69F800F0B54F /* HomeScreenViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D762BCC69F800F0B54F /* HomeScreenViewProtocol.swift */; };
+		5C4E3D792BCC6A2500F0B54F /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D782BCC6A2500F0B54F /* HomeScreenPresenter.swift */; };
+		5C4E3D7B2BCC6A4A00F0B54F /* HomeScreenPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D7A2BCC6A4A00F0B54F /* HomeScreenPresenterProtocol.swift */; };
+		5C4E3D7D2BCC6AB300F0B54F /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D7C2BCC6AB300F0B54F /* HomeScreenRouter.swift */; };
+		5C4E3D7F2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D7E2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift */; };
+		5C4E3D812BCC6B0100F0B54F /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D802BCC6B0100F0B54F /* HomeScreenInteractor.swift */; };
+		5C4E3D832BCC6B2C00F0B54F /* HomeScreenInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D822BCC6B2C00F0B54F /* HomeScreenInteractorProtocol.swift */; };
+		5C4E3D852BCCBD6A00F0B54F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D842BCCBD6900F0B54F /* UIImageViewExtension.swift */; };
+		5C4E3D882BCD044700F0B54F /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D872BCD044700F0B54F /* HomeHeaderView.swift */; };
+		5C4E3D8C2BCD065100F0B54F /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E3D8B2BCD065100F0B54F /* HomeHeaderView.xib */; };
+		5C4E3D8E2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E3D8D2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift */; };
+		5C4E3D902BCD14B300F0B54F /* HomeScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E3D8F2BCD14B300F0B54F /* HomeScreenViewController.storyboard */; };
+		5C5C32D12BCF312C00DE255F /* RecetasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D02BCF312C00DE255F /* RecetasService.swift */; };
+		5C5C32D32BCF316D00DE255F /* RecetasServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D22BCF316D00DE255F /* RecetasServiceProtocol.swift */; };
+		5C5C32D62BCF328F00DE255F /* RecipesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D52BCF328F00DE255F /* RecipesDTO.swift */; };
+		5C5C32D82BCF3B6C00DE255F /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D72BCF3B6C00DE255F /* ServiceResponse.swift */; };
+		5C5C32DB2BCF3E5B00DE255F /* ServiceErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DA2BCF3E5B00DE255F /* ServiceErrorResponse.swift */; };
+		5C5C32DD2BCF480B00DE255F /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */; };
+		5C5C32DF2BCF624E00DE255F /* EncodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */; };
+		5C5C32E12BCF86C000DE255F /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32E02BCF86C000DE255F /* GenericResponse.swift */; };
+		5C5C32E52BCF9AAE00DE255F /* RecetasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32E42BCF9AAE00DE255F /* RecetasParser.swift */; };
+		5C5C32EA2BD08D2D00DE255F /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32E92BD08D2D00DE255F /* ServiceManager.swift */; };
+		5C5C32EC2BD0A23100DE255F /* ServiceManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32EB2BD0A23100DE255F /* ServiceManagerTest.swift */; };
+		5C5C32F32BD0A87700DE255F /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32F22BD0A87700DE255F /* URLProtocolMock.swift */; };
 		5CBEC4C62BCA50EF0083B42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */; };
 		5CBEC4C82BCA50EF0083B42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */; };
 		5CBEC4CA2BCA50EF0083B42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4C92BCA50EF0083B42E /* ViewController.swift */; };
 		5CBEC4CD2BCA50EF0083B42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4CB2BCA50EF0083B42E /* Main.storyboard */; };
 		5CBEC4CF2BCA50F00083B42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */; };
-		5CBEC4D22BCA50F00083B42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */; };
 		5CBEC4DD2BCA50F00083B42E /* CocinaChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */; };
 		5CBEC4E72BCA50F00083B42E /* CocinaChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */; };
 		5CBEC4E92BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */; };
+		5CBEC4F72BCA6FE70083B42E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4F62BCA6FE70083B42E /* Storyboarded.swift */; };
+		5CBEC4F92BCA74360083B42E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4F82BCA74360083B42E /* MainRouter.swift */; };
+		5CBEC4FC2BCA8C870083B42E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC4FB2BCA8C870083B42E /* SplashViewController.swift */; };
+		5CBEC5022BCA8F750083B42E /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5012BCA8F750083B42E /* SplashRouter.swift */; };
+		5CBEC5042BCA8FE30083B42E /* SplashRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5032BCA8FE30083B42E /* SplashRouterProtocol.swift */; };
+		5CBEC5062BCB38B20083B42E /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5052BCB38B20083B42E /* SplashPresenter.swift */; };
+		5CBEC5082BCB3AF20083B42E /* SplashPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5072BCB3AF20083B42E /* SplashPresenterProtocol.swift */; };
+		5CBEC50A2BCB71200083B42E /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5092BCB71200083B42E /* SplashViewProtocol.swift */; };
+		5CBEC50C2BCB73A30083B42E /* SplashInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC50B2BCB73A30083B42E /* SplashInteractorProtocol.swift */; };
+		5CBEC50E2BCB73C20083B42E /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC50D2BCB73C20083B42E /* SplashInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +82,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C4A22962BCDECAF00E76D7C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5C4A229D2BCDF2C900E76D7C /* QueryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryListTableViewController.swift; sourceTree = "<group>"; };
+		5C4A229F2BCDF32C00E76D7C /* QueryListTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QueryListTableViewController.storyboard; sourceTree = "<group>"; };
+		5C4A22A12BCDF3E000E76D7C /* QueryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryListPresenter.swift; sourceTree = "<group>"; };
+		5C4A22A32BCDF3E900E76D7C /* QueryListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryListPresenterProtocol.swift; sourceTree = "<group>"; };
+		5C4A22A52BCE1F4E00E76D7C /* RecetaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetaTableViewCell.xib; sourceTree = "<group>"; };
+		5C4A22A72BCE1FA100E76D7C /* RecetaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaTableViewCell.swift; sourceTree = "<group>"; };
+		5C4A22A92BCE329600E76D7C /* RecetaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetaCollectionViewCell.xib; sourceTree = "<group>"; };
+		5C4A22AB2BCE32EC00E76D7C /* RecetaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C4A22AE2BCE4DB200E76D7C /* ImageRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestManager.swift; sourceTree = "<group>"; };
+		5C4A22B02BCE5E5900E76D7C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5C4E3D682BCBCF3400F0B54F /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
+		5C4E3D742BCC694900F0B54F /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		5C4E3D762BCC69F800F0B54F /* HomeScreenViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewProtocol.swift; sourceTree = "<group>"; };
+		5C4E3D782BCC6A2500F0B54F /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		5C4E3D7A2BCC6A4A00F0B54F /* HomeScreenPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenterProtocol.swift; sourceTree = "<group>"; };
+		5C4E3D7C2BCC6AB300F0B54F /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		5C4E3D7E2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouterProtocol.swift; sourceTree = "<group>"; };
+		5C4E3D802BCC6B0100F0B54F /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		5C4E3D822BCC6B2C00F0B54F /* HomeScreenInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractorProtocol.swift; sourceTree = "<group>"; };
+		5C4E3D842BCCBD6900F0B54F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		5C4E3D872BCD044700F0B54F /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		5C4E3D8B2BCD065100F0B54F /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		5C4E3D8D2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCollapsingAnimator.swift; sourceTree = "<group>"; };
+		5C4E3D8F2BCD14B300F0B54F /* HomeScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenViewController.storyboard; sourceTree = "<group>"; };
+		5C5C32D02BCF312C00DE255F /* RecetasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasService.swift; sourceTree = "<group>"; };
+		5C5C32D22BCF316D00DE255F /* RecetasServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasServiceProtocol.swift; sourceTree = "<group>"; };
+		5C5C32D52BCF328F00DE255F /* RecipesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDTO.swift; sourceTree = "<group>"; };
+		5C5C32D72BCF3B6C00DE255F /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		5C5C32DA2BCF3E5B00DE255F /* ServiceErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorResponse.swift; sourceTree = "<group>"; };
+		5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingProtocol.swift; sourceTree = "<group>"; };
+		5C5C32E02BCF86C000DE255F /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		5C5C32E42BCF9AAE00DE255F /* RecetasParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasParser.swift; sourceTree = "<group>"; };
+		5C5C32E92BD08D2D00DE255F /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		5C5C32EB2BD0A23100DE255F /* ServiceManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTest.swift; sourceTree = "<group>"; };
+		5C5C32F22BD0A87700DE255F /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		5CBEC4C22BCA50EF0083B42E /* CocinaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocinaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5CBEC4C92BCA50EF0083B42E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5CBEC4CC2BCA50EF0083B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5CBEC4D12BCA50F00083B42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CBEC4D32BCA50F00083B42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CBEC4D82BCA50F00083B42E /* CocinaChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeTests.swift; sourceTree = "<group>"; };
 		5CBEC4E22BCA50F00083B42E /* CocinaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeUITests.swift; sourceTree = "<group>"; };
 		5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CBEC4F62BCA6FE70083B42E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5CBEC4F82BCA74360083B42E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		5CBEC4FB2BCA8C870083B42E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5CBEC5012BCA8F750083B42E /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		5CBEC5032BCA8FE30083B42E /* SplashRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouterProtocol.swift; sourceTree = "<group>"; };
+		5CBEC5052BCB38B20083B42E /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		5CBEC5072BCB3AF20083B42E /* SplashPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterProtocol.swift; sourceTree = "<group>"; };
+		5CBEC5092BCB71200083B42E /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
+		5CBEC50B2BCB73A30083B42E /* SplashInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorProtocol.swift; sourceTree = "<group>"; };
+		5CBEC50D2BCB73C20083B42E /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +168,242 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C4A22982BCDF09B00E76D7C /* RecetasList */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A229C2BCDF0FB00E76D7C /* Interactor */,
+				5C4A229B2BCDF0F400E76D7C /* Router */,
+				5C4A229A2BCDF0EC00E76D7C /* Presenter */,
+				5C4A22992BCDF0DA00E76D7C /* View */,
+			);
+			path = RecetasList;
+			sourceTree = "<group>";
+		};
+		5C4A22992BCDF0DA00E76D7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A229D2BCDF2C900E76D7C /* QueryListTableViewController.swift */,
+				5C4A229F2BCDF32C00E76D7C /* QueryListTableViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C4A229A2BCDF0EC00E76D7C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A22A12BCDF3E000E76D7C /* QueryListPresenter.swift */,
+				5C4A22A32BCDF3E900E76D7C /* QueryListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C4A229B2BCDF0F400E76D7C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5C4A229C2BCDF0FB00E76D7C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5C4A22AD2BCE4D7000E76D7C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32E22BCF903900DE255F /* ImageService */,
+				5C5C32D92BCF3E3600DE255F /* ServiceResponse */,
+				5C5C32CF2BCF30D800DE255F /* Recetas */,
+				5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */,
+				5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */,
+				5C5C32E02BCF86C000DE255F /* GenericResponse.swift */,
+				5C5C32E92BD08D2D00DE255F /* ServiceManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5C4E3D6A2BCC67EA00F0B54F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32D42BCF326300DE255F /* Entity */,
+				5C4E3D6E2BCC687D00F0B54F /* Interactor */,
+				5C4E3D6D2BCC687500F0B54F /* Router */,
+				5C4E3D6C2BCC686900F0B54F /* Presenter */,
+				5C4E3D6B2BCC685000F0B54F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5C4E3D6B2BCC685000F0B54F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32E72BCFD55800DE255F /* TableCell */,
+				5C5C32E62BCFD52500DE255F /* CollectionCell */,
+				5C4E3D862BCD041B00F0B54F /* HeaderHomeView */,
+				5C4E3D742BCC694900F0B54F /* HomeScreenViewController.swift */,
+				5C4E3D762BCC69F800F0B54F /* HomeScreenViewProtocol.swift */,
+				5C4E3D8F2BCD14B300F0B54F /* HomeScreenViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C4E3D6C2BCC686900F0B54F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E3D782BCC6A2500F0B54F /* HomeScreenPresenter.swift */,
+				5C4E3D7A2BCC6A4A00F0B54F /* HomeScreenPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C4E3D6D2BCC687500F0B54F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E3D7C2BCC6AB300F0B54F /* HomeScreenRouter.swift */,
+				5C4E3D7E2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5C4E3D6E2BCC687D00F0B54F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E3D802BCC6B0100F0B54F /* HomeScreenInteractor.swift */,
+				5C4E3D822BCC6B2C00F0B54F /* HomeScreenInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5C4E3D6F2BCC689700F0B54F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E3D732BCC68DD00F0B54F /* Interactor */,
+				5C4E3D722BCC68D400F0B54F /* Router */,
+				5C4E3D712BCC68C200F0B54F /* Presenter */,
+				5C4E3D702BCC68BB00F0B54F /* View */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		5C4E3D702BCC68BB00F0B54F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C4E3D712BCC68C200F0B54F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C4E3D722BCC68D400F0B54F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5C4E3D732BCC68DD00F0B54F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		5C4E3D862BCD041B00F0B54F /* HeaderHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E3D872BCD044700F0B54F /* HomeHeaderView.swift */,
+				5C4E3D8D2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift */,
+				5C4E3D8B2BCD065100F0B54F /* HomeHeaderView.xib */,
+			);
+			path = HeaderHomeView;
+			sourceTree = "<group>";
+		};
+		5C5C32CF2BCF30D800DE255F /* Recetas */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32E32BCF9A8300DE255F /* Parcers */,
+				5C5C32D02BCF312C00DE255F /* RecetasService.swift */,
+				5C5C32D22BCF316D00DE255F /* RecetasServiceProtocol.swift */,
+			);
+			path = Recetas;
+			sourceTree = "<group>";
+		};
+		5C5C32D42BCF326300DE255F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32D52BCF328F00DE255F /* RecipesDTO.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5C5C32D92BCF3E3600DE255F /* ServiceResponse */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32D72BCF3B6C00DE255F /* ServiceResponse.swift */,
+				5C5C32DA2BCF3E5B00DE255F /* ServiceErrorResponse.swift */,
+			);
+			path = ServiceResponse;
+			sourceTree = "<group>";
+		};
+		5C5C32E22BCF903900DE255F /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A22AE2BCE4DB200E76D7C /* ImageRequestManager.swift */,
+			);
+			path = ImageService;
+			sourceTree = "<group>";
+		};
+		5C5C32E32BCF9A8300DE255F /* Parcers */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32E42BCF9AAE00DE255F /* RecetasParser.swift */,
+			);
+			path = Parcers;
+			sourceTree = "<group>";
+		};
+		5C5C32E62BCFD52500DE255F /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A22AB2BCE32EC00E76D7C /* RecetaCollectionViewCell.swift */,
+				5C4A22A92BCE329600E76D7C /* RecetaCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		5C5C32E72BCFD55800DE255F /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A22A72BCE1FA100E76D7C /* RecetaTableViewCell.swift */,
+				5C4A22A52BCE1F4E00E76D7C /* RecetaTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		5C5C32E82BD0778200DE255F /* NetworkMannagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32ED2BD0A64600DE255F /* Mocks */,
+				5C5C32EB2BD0A23100DE255F /* ServiceManagerTest.swift */,
+			);
+			path = NetworkMannagerTests;
+			sourceTree = "<group>";
+		};
+		5C5C32ED2BD0A64600DE255F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C32F22BD0A87700DE255F /* URLProtocolMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		5CBEC4B92BCA50EE0083B42E = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +427,18 @@
 		5CBEC4C42BCA50EF0083B42E /* CocinaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				5C4A22982BCDF09B00E76D7C /* RecetasList */,
+				5C4E3D6F2BCC689700F0B54F /* OnBoarding */,
+				5C4E3D6A2BCC67EA00F0B54F /* Home */,
+				5CBEC4FA2BCA8C3B0083B42E /* Lauchscreen */,
 				5CBEC4C52BCA50EF0083B42E /* AppDelegate.swift */,
 				5CBEC4C72BCA50EF0083B42E /* SceneDelegate.swift */,
+				5CBEC4F82BCA74360083B42E /* MainRouter.swift */,
 				5CBEC4C92BCA50EF0083B42E /* ViewController.swift */,
 				5CBEC4CB2BCA50EF0083B42E /* Main.storyboard */,
+				5C4A22AD2BCE4D7000E76D7C /* Networking */,
+				5CBEC4F52BCA6F310083B42E /* extensions */,
 				5CBEC4CE2BCA50F00083B42E /* Assets.xcassets */,
-				5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */,
 				5CBEC4D32BCA50F00083B42E /* Info.plist */,
 			);
 			path = CocinaChallenge;
@@ -113,6 +447,7 @@
 		5CBEC4DB2BCA50F00083B42E /* CocinaChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				5C5C32E82BD0778200DE255F /* NetworkMannagerTests */,
 				5CBEC4DC2BCA50F00083B42E /* CocinaChallengeTests.swift */,
 			);
 			path = CocinaChallengeTests;
@@ -125,6 +460,65 @@
 				5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */,
 			);
 			path = CocinaChallengeUITests;
+			sourceTree = "<group>";
+		};
+		5CBEC4F52BCA6F310083B42E /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4F62BCA6FE70083B42E /* Storyboarded.swift */,
+				5C4E3D842BCCBD6900F0B54F /* UIImageViewExtension.swift */,
+				5C4A22962BCDECAF00E76D7C /* UIViewController.swift */,
+				5C4A22B02BCE5E5900E76D7C /* UIViewExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		5CBEC4FA2BCA8C3B0083B42E /* Lauchscreen */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC5002BCA8F300083B42E /* Router */,
+				5CBEC4FF2BCA8F1E0083B42E /* Interactor */,
+				5CBEC4FE2BCA8F000083B42E /* View */,
+				5CBEC4FD2BCA8ED00083B42E /* Presenter */,
+			);
+			path = Lauchscreen;
+			sourceTree = "<group>";
+		};
+		5CBEC4FD2BCA8ED00083B42E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC5052BCB38B20083B42E /* SplashPresenter.swift */,
+				5CBEC5072BCB3AF20083B42E /* SplashPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5CBEC4FE2BCA8F000083B42E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4FB2BCA8C870083B42E /* SplashViewController.swift */,
+				5CBEC5092BCB71200083B42E /* SplashViewProtocol.swift */,
+				5C4E3D682BCBCF3400F0B54F /* SplashStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CBEC4FF2BCA8F1E0083B42E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC50B2BCB73A30083B42E /* SplashInteractorProtocol.swift */,
+				5CBEC50D2BCB73C20083B42E /* SplashInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5CBEC5002BCA8F300083B42E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC5012BCA8F750083B42E /* SplashRouter.swift */,
+				5CBEC5032BCA8FE30083B42E /* SplashRouterProtocol.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +625,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CBEC4D22BCA50F00083B42E /* LaunchScreen.storyboard in Resources */,
+				5C4A22AA2BCE329600E76D7C /* RecetaCollectionViewCell.xib in Resources */,
+				5C4E3D902BCD14B300F0B54F /* HomeScreenViewController.storyboard in Resources */,
+				5C4E3D8C2BCD065100F0B54F /* HomeHeaderView.xib in Resources */,
+				5C4A22A62BCE1F4E00E76D7C /* RecetaTableViewCell.xib in Resources */,
 				5CBEC4CF2BCA50F00083B42E /* Assets.xcassets in Resources */,
+				5C4A22A02BCDF32C00E76D7C /* QueryListTableViewController.storyboard in Resources */,
+				5C4E3D692BCBCF3400F0B54F /* SplashStoryboard.storyboard in Resources */,
 				5CBEC4CD2BCA50EF0083B42E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +658,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CBEC4CA2BCA50EF0083B42E /* ViewController.swift in Sources */,
+				5C4A22A82BCE1FA100E76D7C /* RecetaTableViewCell.swift in Sources */,
+				5CBEC50C2BCB73A30083B42E /* SplashInteractorProtocol.swift in Sources */,
+				5C4A229E2BCDF2C900E76D7C /* QueryListTableViewController.swift in Sources */,
+				5CBEC5042BCA8FE30083B42E /* SplashRouterProtocol.swift in Sources */,
+				5C5C32EA2BD08D2D00DE255F /* ServiceManager.swift in Sources */,
+				5CBEC50E2BCB73C20083B42E /* SplashInteractor.swift in Sources */,
+				5C4A22B12BCE5E5900E76D7C /* UIViewExtension.swift in Sources */,
+				5C5C32D62BCF328F00DE255F /* RecipesDTO.swift in Sources */,
+				5C4A22972BCDECAF00E76D7C /* UIViewController.swift in Sources */,
+				5C4A22A42BCDF3E900E76D7C /* QueryListPresenterProtocol.swift in Sources */,
+				5CBEC5022BCA8F750083B42E /* SplashRouter.swift in Sources */,
+				5C4E3D792BCC6A2500F0B54F /* HomeScreenPresenter.swift in Sources */,
+				5C4E3D852BCCBD6A00F0B54F /* UIImageViewExtension.swift in Sources */,
 				5CBEC4C62BCA50EF0083B42E /* AppDelegate.swift in Sources */,
+				5CBEC4FC2BCA8C870083B42E /* SplashViewController.swift in Sources */,
+				5C4E3D7B2BCC6A4A00F0B54F /* HomeScreenPresenterProtocol.swift in Sources */,
 				5CBEC4C82BCA50EF0083B42E /* SceneDelegate.swift in Sources */,
+				5CBEC4F92BCA74360083B42E /* MainRouter.swift in Sources */,
+				5C4E3D772BCC69F800F0B54F /* HomeScreenViewProtocol.swift in Sources */,
+				5CBEC4F72BCA6FE70083B42E /* Storyboarded.swift in Sources */,
+				5C5C32E12BCF86C000DE255F /* GenericResponse.swift in Sources */,
+				5C5C32D32BCF316D00DE255F /* RecetasServiceProtocol.swift in Sources */,
+				5C5C32DD2BCF480B00DE255F /* ServiceProtocol.swift in Sources */,
+				5C4E3D8E2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift in Sources */,
+				5C4E3D7D2BCC6AB300F0B54F /* HomeScreenRouter.swift in Sources */,
+				5C4E3D7F2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift in Sources */,
+				5C5C32D82BCF3B6C00DE255F /* ServiceResponse.swift in Sources */,
+				5C5C32D12BCF312C00DE255F /* RecetasService.swift in Sources */,
+				5C5C32DF2BCF624E00DE255F /* EncodingProtocol.swift in Sources */,
+				5C4E3D812BCC6B0100F0B54F /* HomeScreenInteractor.swift in Sources */,
+				5C4A22AF2BCE4DB200E76D7C /* ImageRequestManager.swift in Sources */,
+				5C4A22A22BCDF3E000E76D7C /* QueryListPresenter.swift in Sources */,
+				5CBEC5062BCB38B20083B42E /* SplashPresenter.swift in Sources */,
+				5C4A22AC2BCE32EC00E76D7C /* RecetaCollectionViewCell.swift in Sources */,
+				5C5C32E52BCF9AAE00DE255F /* RecetasParser.swift in Sources */,
+				5CBEC5082BCB3AF20083B42E /* SplashPresenterProtocol.swift in Sources */,
+				5C5C32DB2BCF3E5B00DE255F /* ServiceErrorResponse.swift in Sources */,
+				5C4E3D832BCC6B2C00F0B54F /* HomeScreenInteractorProtocol.swift in Sources */,
+				5CBEC50A2BCB71200083B42E /* SplashViewProtocol.swift in Sources */,
+				5C4E3D882BCD044700F0B54F /* HomeHeaderView.swift in Sources */,
+				5C4E3D752BCC694900F0B54F /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +706,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5C32F32BD0A87700DE255F /* URLProtocolMock.swift in Sources */,
 				5CBEC4DD2BCA50F00083B42E /* CocinaChallengeTests.swift in Sources */,
+				5C5C32EC2BD0A23100DE255F /* ServiceManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +743,6 @@
 				5CBEC4CC2BCA50EF0083B42E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5CBEC4D02BCA50F00083B42E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CBEC4D12BCA50F00083B42E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,10 +878,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CocinaChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,10 +907,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CocinaChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
