@@ -49,7 +49,7 @@ class HomeHeaderView: UIView {
      
      func setupUI() {
          backgroundColor = UIColor.green
-         self.title.text = "HOme HOLA"
+         self.title.text = ""
          setupSearchController()
          setupKeyboardObservers()
      }

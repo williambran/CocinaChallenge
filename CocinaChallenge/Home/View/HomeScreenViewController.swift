@@ -276,9 +276,9 @@ extension HomeScreenViewController: HomeHeaderDelegate {
     }
     
     func didCancelSearch() {
-        if statusSearch == .SEARCHED {
+        
             dataSource = searchingData
-        }
+        
         statusSearch = .INACTIVE
         headerAnimator?.scrolllViewComplete()
        
