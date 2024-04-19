@@ -20,10 +20,13 @@ Podremos ver la hubicacion del origen de los platillos 😋
 
 ## Responsive
 ![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/ipad_portain.png)
-![https://raw.githubusercontent.com/williambran/CocinaChallenge/main/iphone.png)
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/iphone.png)
+
 
 ## Mapa
-![https://raw.githubusercontent.com/williambran/CocinaChallenge/main/ipad_map.png)
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/ipad_map.png)
+
+
 
 
 
