@@ -5,12 +5,27 @@ Es un projecto que realizado con lenguage swift utilizando una arquitectura VIPE
 Se tomo la decision de usar esta arquitectura ya que nos permite tener un mayor orden y desacople entre los diferentes componentes, un mejor manejo entre la 
 navegacion y escalabilidad.
 
-Este desarrollo inluye ademas animaciones.
+Este desarrollo incluye ademas animaciones.
 
 ## Acerca de la app
 Es una aplicacion con topic de recetas de cocina, el cual cuenta con un cosumo de servidios y navegacion entre las distintas pnatallas, donde podremos ver una 
 lista de platillos, de los cuales podremos dar clik y nos mostrara los detalles de ese platillo, nomre, ingredientes, y una pequena receta para su elaboracion. 
 Podremos ver la hubicacion del origen de los platillos 😋
+
+## Animation
+
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/SplashHome.gif)
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/SplashHome.gif)
+
+
+## Responsive
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/ipad_portain.png)
+![https://raw.githubusercontent.com/williambran/CocinaChallenge/main/iphone.png)
+
+## Mapa
+![https://raw.githubusercontent.com/williambran/CocinaChallenge/main/ipad_map.png)
+
+
 
 
 ## Installation
