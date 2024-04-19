@@ -15,6 +15,7 @@ protocol HomeHeaderDelegate {
     func searchFast(_ query: String?)
 }
 
+
 class HomeHeaderView: UIView {
     
        @IBOutlet var headerImg: UIImageView!
@@ -60,6 +61,24 @@ class HomeHeaderView: UIView {
 
         contentView.addSubview(blackOverlayView!)
         self.layoutIfNeeded()
+    }
+    func deselected() {
+        //searchController.searchBar.resignFirstResponder()
+        searchController.isActive = false
+        blackOverlayView?.removeFromSuperview()
+        blackOverlayView = nil
+        //viewC?.didCancelSearch()
+    }
+    
+    func getSearchText() -> String? {
+        if  let searchText = searchController.searchBar.text {
+            return searchText
+        }
+        return nil
+    }
+    func setSearch(lastSearch: String?) {
+        
+        searchController.searchBar.text = lastSearch ?? "Sin busqueda"
     }
     
     private func setupKeyboardObservers() {
@@ -116,18 +135,16 @@ extension HomeHeaderView: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("Se toco search")
         guard let searchText = searchBar.text, !searchText.isEmpty else { return }
-        searchController.isActive = false
+        //searchController.isActive = false
         viewC?.searchFast(searchText)
 
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        print("Se toco cancelar")
         blackOverlayView?.removeFromSuperview()
         blackOverlayView = nil
         viewC?.didCancelSearch()
     }
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        print("Se toco Search para editar")
         blackOverlayView = UIView(frame: bounds)
         var colorBgd = UIColor.black.withAlphaComponent(0.5)
         blackOverlayView?.backgroundColor = colorBgd
@@ -139,26 +156,13 @@ extension HomeHeaderView: UISearchBarDelegate {
 }
 
 extension HomeHeaderView : UISearchControllerDelegate {
-    //Se presentara EL search
-    func willPresentSearchController(_ searchController: UISearchController) {
-        print("Se presentara EL search")
-    }
 
-    func willDismissSearchController(_ searchController: UISearchController) {
-        
-    }
-
-    func didDismissSearchController(_ searchController: UISearchController) {
-       
-    }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("Se buscara ",searchText )
         viewC?.search(searchText)
     }
 }
 
 extension UISearchBar {
-    /// Return text field inside a search bar
     var textField: UITextField? {
         guard let text = self.value(forKey: "searchField") as? UITextField else {
             return nil

@@ -8,18 +8,25 @@
 import Foundation
 import UIKit
 
+protocol HomeHeaderCollapsingAnimatorDelegate {
+    var heigthConstraint: NSLayoutConstraint {get set}
+    var maxHeaderHeight: CGFloat {get set}
+}
+
+protocol HomeHeaderCollapsingAnimatorProtocol {
+    func scrollViewDidScroll(offset: CGPoint)
+    func scrolllViewBeging()
+    func scrolllViewComplete()
+}
 
 
-final class HomeHeaderCollapsingAnimator {
-    private let headerView: UIView
-     let heigthConstraint: NSLayoutConstraint
+final class HomeHeaderCollapsingAnimator: HomeHeaderCollapsingAnimatorProtocol {
     
+    let heigthConstraint: NSLayoutConstraint
     private var maxHeaderHeight: CGFloat
     
-    init(headerView: UIView, heigthConstraint: NSLayoutConstraint) {
-        self.headerView = headerView
+    init(heigthConstraint: NSLayoutConstraint) {
         self.heigthConstraint = heigthConstraint
-        
         maxHeaderHeight = heigthConstraint.constant
     }
     
@@ -40,7 +47,10 @@ final class HomeHeaderCollapsingAnimator {
     
     func scrolllViewBeging() {
         heigthConstraint.constant = 100
-
+    }
+    
+    func scrolllViewComplete() {
+        heigthConstraint.constant = 300
     }
 
 }

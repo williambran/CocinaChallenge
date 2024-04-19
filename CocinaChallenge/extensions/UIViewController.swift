@@ -26,4 +26,11 @@ extension UIViewController {
         removeFromParent()
         view.removeFromSuperview()
     }
+    func setViewDetents() {
+        if #available(iOS 15.0, *){
+            guard let sheet = self.sheetPresentationController else { return }
+            sheet.detents = [.medium(),.large()]
+            sheet.prefersGrabberVisible = false
+        }
+    }
 }

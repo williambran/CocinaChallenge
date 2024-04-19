@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="StepsDishTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="186" id="hUb-wX-KQJ" customClass="StepsDishTableViewCell" customModule="CocinaChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hUb-wX-KQJ" id="LbB-gc-mm3">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIp-Dw-Rgp">
+                        <rect key="frame" x="15" y="30" width="511" height="91"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tXL-xH-ZSt">
+                        <rect key="frame" x="471" y="126" width="70" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1m-gi-uF2">
+                                <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                                <color key="backgroundColor" name="base_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gZw-qz-fsf"/>
+                                    <constraint firstAttribute="width" constant="50" id="ptc-8N-RzB"/>
+                                </constraints>
+                                <color key="tintColor" name="base_color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="mappin" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="g4k-w1-mPT"/>
+                            <constraint firstAttribute="trailing" secondItem="j1m-gi-uF2" secondAttribute="trailing" constant="10" id="tVR-hY-tHM"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tXL-xH-ZSt" firstAttribute="top" secondItem="bIp-Dw-Rgp" secondAttribute="bottom" constant="5" id="06P-eq-GOH"/>
+                    <constraint firstAttribute="trailing" secondItem="bIp-Dw-Rgp" secondAttribute="trailing" constant="15" id="0qe-eq-XEC"/>
+                    <constraint firstItem="bIp-Dw-Rgp" firstAttribute="centerX" secondItem="LbB-gc-mm3" secondAttribute="centerX" id="Imm-Tg-xpC"/>
+                    <constraint firstItem="bIp-Dw-Rgp" firstAttribute="leading" secondItem="LbB-gc-mm3" secondAttribute="leading" constant="15" id="L6i-Ch-3JG"/>
+                    <constraint firstAttribute="bottom" secondItem="tXL-xH-ZSt" secondAttribute="bottom" constant="10" id="NaX-Ya-4f5"/>
+                    <constraint firstAttribute="trailing" secondItem="tXL-xH-ZSt" secondAttribute="trailing" id="bvV-ww-8WG"/>
+                    <constraint firstItem="bIp-Dw-Rgp" firstAttribute="top" secondItem="LbB-gc-mm3" secondAttribute="top" constant="30" id="qXy-Gn-ysu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLbl" destination="bIp-Dw-Rgp" id="U8M-Wn-7fg"/>
+                <outlet property="locationBtn" destination="j1m-gi-uF2" id="p4x-Y7-Zur"/>
+            </connections>
+            <point key="canvasLocation" x="-45.038167938931295" y="23.239436619718312"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mappin" catalog="system" width="106" height="128"/>
+        <namedColor name="base_color">
+            <color red="0.96078431372549022" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

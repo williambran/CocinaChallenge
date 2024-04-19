@@ -1,25 +1,31 @@
 //
-//  RouterLaucher.swift
+//  DetailsDishRouter.swift
 //  CocinaChallenge
 //
-//  Created by William Brando Estrada Tepec on 13/04/24.
+//  Created by William Brando Estrada Tepec on 17/04/24.
 //
 
 import Foundation
 import UIKit
 
 
-class SplashRouter: RouterProtocol {
+class DetailsDishRouter: RouterProtocol {
+    
     
     var rootView: UIViewController?
     var navigation: UINavigationController?
-    
+    var data: DishesDTO?
+
+    init(data: DishesDTO? = nil){
+        self.data = data
+    }
     
     func start(navigation: UINavigationController?) {
-        let view = SplashViewController.instantiate(from: "SplashStoryboard")
-        let interactor = SplashInteractor()
-        let presenter = SplashPresenter()
+        let view = DetailsDishViewController.instantiate(from: "DetailsDishViewController")
+        let interactor = DetailsDishInteractor()
+        let presenter = DetailsDishPresenter()
         
+        presenter.dataRecipes = data
         interactor.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor
@@ -35,23 +41,16 @@ class SplashRouter: RouterProtocol {
             rootView?.present(self.navigation!, animated: true)
         }
     }
+    
 }
-
-extension SplashRouter: SplashRouterProtocol {
-
+extension DetailsDishRouter: DetailsDishRouterProtocol {
     
-    func goLogin() {
-    }
-    
-    func goHome() {
-        //instanciar nuevos routers
-        
-
-    }
-    func goOnBoarding() {
-        let router: HomeScreenRouterProtocol = HomeScreenRouter()
+    func mapRouter(data: LocationOriginDto? ) {
+        let router = MapRouter()
+        router.data = data
         router.start(navigation: navigation)
-       
     }
-
+    
+    
+    
 }

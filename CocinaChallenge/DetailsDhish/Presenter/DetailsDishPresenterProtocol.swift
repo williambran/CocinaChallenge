@@ -8,4 +8,7 @@
 import Foundation
 
 
-protocol QueryListPresenterProtocol {}
+protocol DetailsDishPresenterProtocol {
+    var dataRecipes: DishesDTO? {get set}
+    func gotToMapView(data: LocationOriginDto?)
+}

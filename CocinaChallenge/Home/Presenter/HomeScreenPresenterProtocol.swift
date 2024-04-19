@@ -9,8 +9,7 @@ import Foundation
 
 
 protocol HomeScreenPresenterProtocol {
-    func goBack()
-    func showListSuggestion()
+    func goDetails(_ dataRecipes: DishesDTO)
     func getListRecetas()
 }
 

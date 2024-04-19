@@ -12,12 +12,6 @@ class RecetaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var nameLbl: UILabel!
     
-    static let identifier = "RecetaCollectionViewCell"
-    
-    
-    static func nib() -> UINib {
-        return UINib(nibName: identifier, bundle: nil)
-    }
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -26,7 +20,6 @@ class RecetaCollectionViewCell: UICollectionViewCell {
     }
     
     func setupUI(name: String?, urlImg: String?){
-        
         nameLbl.text = name ?? "Sin nombre"
         descriptionView.backgroundColor = UIColor.black.withAlphaComponent( 0.6)
         coverImg.downLoadImg(urlStr: urlImg ?? "")

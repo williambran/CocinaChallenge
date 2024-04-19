@@ -14,40 +14,48 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     typealias ReloadData = () -> Void
     var reloadCallback: ReloadData?
     var presenter: HomeScreenPresenter?
-    private var headerAnimator: HomeHeaderCollapsingAnimator?
+    var headerAnimator: HomeHeaderCollapsingAnimatorProtocol?
     var dataSource: [DishesDTO] = []
     var searchingData: [DishesDTO] = []
-   // var searchingDataSet: Set<DishesDTO> = Set()
+    var searchingDataSet: Set<DishesDTO> = Set()
     var searchingFlag: Bool = false
-       
-    @IBOutlet  weak   var headerView: UIView!
-    @IBOutlet  private(set)  var contenListView: UIView!
-    @IBOutlet  weak var headerConstraint: NSLayoutConstraint?
+    var textSearched = ""
+    var statusSearch: searchStatus = .INACTIVE
+    
+    //weak var collectionView: UICollectionView!
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var contenListView: UIView!
+    @IBOutlet weak var headerConstraint: NSLayoutConstraint?
     @IBOutlet weak var resultSearchLbl: UILabel!
     @IBOutlet weak var loading: UIActivityIndicatorView!
-    let widthScreen = UIScreen.main.bounds.width
-    var numberOfColumns: CGFloat = 0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+        view.backgroundColor = UIColor(named: "base_color")
         setup()
+        presenter?.getListRecetas()
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.getListRecetas()
+        navigationController?.isNavigationBarHidden = true
+        collectionView.reloadData()
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
 
         coordinator.animate(alongsideTransition: { context in
-            // Aquí puedes realizar acciones específicas mientras la transición está en curso
-            // Por ejemplo, ajustar el diseño de tus vistas
             self.homeHeaderView.actualizarComponentes()
         }) { context in
-            // Aquí puedes realizar acciones específicas después de que la transición haya finalizado
-            // Por ejemplo, actualizar datos o recargar vistas
         }
     }
+
+    let widthScreen = UIScreen.main.bounds.width
+    var numberOfColumns: CGFloat = 0
+    
     lazy var collectionView: UICollectionView = {
        var layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -72,7 +80,7 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
         return tableView
     }()
     
-    lazy var homeHeaderView: HomeHeaderView = {
+    lazy var homeHeaderView = { [weak self] in
         var homeHeaderView = HomeHeaderView()
         homeHeaderView.viewC = self
         homeHeaderView.translatesAutoresizingMaskIntoConstraints = false
@@ -81,14 +89,11 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     
     func setup() {
         numberOfColumns = widthScreen > 500 ? 3: 2
-        navigationController?.isNavigationBarHidden = true
         self.headerConstraint?.isActive = true
         activarViewHeader()
         setupHeader()
-        //setupTableView()
         setupCollectionView()
         setupHeaderAnimation()
-        tableView.reloadData()
         reloadCallback = { [weak self] in
             if let dataSource = self?.dataSource , dataSource.isEmpty {
                 self?.collectionView.isHidden = true
@@ -106,7 +111,6 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     }
     
     func setupHeader() {
-       // homeHeaderView.backgroundColor = UIColor.red
         self.headerView.addSubview(homeHeaderView)
         NSLayoutConstraint.activate([
             homeHeaderView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor),
@@ -131,32 +135,19 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
         collectionView.dataSource = self
         collectionView.contentInsetAdjustmentBehavior = .never
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        reloadDataCompletion {
-            if  self.dataSource.isEmpty {
-                self.collectionView.isHidden = true
+        collectionView.backgroundColor =  UIColor(named: "base_color")
+        reloadDataCompletion { [weak self] in
+            if  ((self?.dataSource.isEmpty) != nil) {
+                self?.collectionView.isHidden = true
             } else {
-                self.collectionView.isHidden = false
+                self?.collectionView.isHidden = false
             }
         }
         
     }
     
-    func setupTableView() {
-        contenListView.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: contenListView.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: contenListView.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: contenListView.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: contenListView.bottomAnchor)
-        ])
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.contentInsetAdjustmentBehavior = .never
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-    
     func setupHeaderAnimation() {
-        headerAnimator = HomeHeaderCollapsingAnimator(headerView: headerView, heigthConstraint: headerConstraint!)
+        headerAnimator = HomeHeaderCollapsingAnimator( heigthConstraint: headerConstraint!)
     }
     
     func activarViewHeader() {
@@ -164,9 +155,9 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     }
     
     func reloadDataCompletion(completion: @escaping()->Void) {
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
+        DispatchQueue.main.async { [weak self] in
             completion()
+            self?.collectionView.reloadData()
         }
     }
     
@@ -181,19 +172,18 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
 extension HomeScreenViewController: HomeScreenViewProtocol {
     func loadData(dishes: [DishesDTO]) {
         self.dataSource = dishes
-        //self.searchingDataSet = Set(dishes)
-        reloadDataCompletion {
-            if self.dataSource.isEmpty {
-                self.collectionView.isHidden = true
-            } else {
-                self.collectionView.isHidden = false
-            }
+        if self.dataSource.isEmpty {
+            self.collectionView.isHidden = true
+        }else {
+            self.collectionView.isHidden = false
         }
-        
+        self.collectionView.reloadData()
     }
 }
 
-extension HomeScreenViewController: UITableViewDelegate {
+
+
+extension HomeScreenViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard  scrollView.contentOffset.y != (contenListView.frame.origin.y * -1) else { return  }
         UIView.animate(withDuration: 0.4, animations: {[ weak self] in
@@ -201,23 +191,12 @@ extension HomeScreenViewController: UITableViewDelegate {
             self?.view.layoutIfNeeded()
         })
     }
-}
-
-extension HomeScreenViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        homeHeaderView.deselected()
+        textSearched = homeHeaderView.getSearchText() ?? ""
+        presenter?.goDetails(dataSource[indexPath.row])
+        
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = dataSource[indexPath.row].name
-        return cell
-    }
-    
-}
-
-extension HomeScreenViewController: UICollectionViewDelegate {
-    
 }
 
 extension HomeScreenViewController: UICollectionViewDataSource {
@@ -226,21 +205,20 @@ extension HomeScreenViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        weak var cell: RecetaCollectionViewCell?
         let cellReusable = collectionView.dequeueReusableCell(withReuseIdentifier: RecetaCollectionViewCell.reuseIdentifier, for: indexPath) as? RecetaCollectionViewCell
-        guard let cell = cellReusable else { return UICollectionViewCell() }
-        cell.setupUI(name: dataSource[indexPath.row].name, urlImg: dataSource[indexPath.row].urlImg)
-        cell.addRoundCorners(cornerRadius: 15)
-        return cell
+        cell = cellReusable
+        cell?.setupUI(name: dataSource[indexPath.row].name, urlImg: dataSource[indexPath.row].urlImg)
+        cell?.addRoundCorners(cornerRadius: 15)
+        return cell ?? UICollectionViewCell()
     }
-    
 }
 extension HomeScreenViewController: HomeHeaderDelegate {
-    func searchFast(_ query: String?) {
-        
-    }
     
     func begingSearch() {
-        searchingData = dataSource
+        if statusSearch == .INACTIVE {
+            searchingData = dataSource
+        }
         UIView.animate(withDuration: 0.15, animations: {[ weak self] in
 
             self?.headerAnimator?.scrolllViewBeging()
@@ -251,31 +229,59 @@ extension HomeScreenViewController: HomeHeaderDelegate {
     }
     
     func search(_ query: String?) {
-        guard let query = query, !searchingFlag else { return }
+        guard let query = query, statusSearch != .SEARCHING else { return }
         self.searchingFlag = true
-        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline:  .now() + 3) { [weak self] in
+        statusSearch = .SEARCHING
+        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline:  .now() + 0.1) { [weak self] in
+            self?.statusSearch = .SEARCHED
             guard let searching = self?.searchingFlag, searching else {return}
             self?.searchingFlag = false
             let dish = self?.searchingData.filter{$0.name?.range(of: query, options: .caseInsensitive) != nil}
             if let data = dish, !data.isEmpty {
+                self?.statusSearch = .SUCCESS_SEARCH
                 self?.dataSource = data
+            } else {
+                self?.statusSearch = .EMPTY_SEARCH
+                self?.dataSource = []
+            }
+            self?.reloadDataCompletion { [weak self] in
+                self?.reloadCallback?()
+            }
+        }
+        self.collectionView.isHidden = true
+        self.loading.startAnimating()
+        self.loading.isHidden = false
+        self.resultSearchLbl.text = "Buscando..."
+    }
+    
+    
+    func searchFast(_ query: String?) {
+        guard  statusSearch != .SEARCHING else { return }
+        self.searchingFlag = true
+        statusSearch = .SEARCHING
+        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
+            self?.searchingFlag = false
+            self?.statusSearch = .SEARCHED
+            let dishResult1 = self?.searchingDataSet.filter{ $0.name == query }
+            self?.dataSource = []
+            if let data = dishResult1 {
+                self?.dataSource = Array(data)
             } else {
                 self?.dataSource = []
             }
-                self?.reloadDataCompletion { [weak self] in
-                    self?.reloadCallback?()
-                }
-        }
-            self.reloadDataCompletion { [weak self] in
-                self?.collectionView.isHidden = true
-                self?.loading.startAnimating()
-                self?.loading.isHidden = false
-                self?.resultSearchLbl.text = "Buscando..."
+            self?.reloadDataCompletion { [weak self] in
+                self?.reloadCallback?()
+            }
         }
     }
     
     func didCancelSearch() {
-        dataSource = searchingData
+        if statusSearch == .SEARCHED {
+            dataSource = searchingData
+        }
+        statusSearch = .INACTIVE
+        headerAnimator?.scrolllViewComplete()
+       
         reloadDataCompletion { [weak self] in
             if let dataSsource = self?.dataSource, dataSsource.isEmpty {
                 self?.collectionView.isHidden = true
@@ -285,6 +291,20 @@ extension HomeScreenViewController: HomeHeaderDelegate {
         }
     }
     
-    
+    func activateSearching() {
+        dataSource =  searchingData
+        collectionView.isHidden = true
+        loading.isHidden = true
+        resultSearchLbl.text = "Search"
+    }
 }
 
+
+
+enum searchStatus {
+    case SEARCHING
+    case SEARCHED
+    case INACTIVE
+    case SUCCESS_SEARCH
+    case EMPTY_SEARCH
+}

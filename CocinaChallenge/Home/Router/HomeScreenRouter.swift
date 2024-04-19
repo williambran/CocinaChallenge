@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class HomeScreenRouter: RouterProtocol {
+class HomeScreenRouter {
     
     var rootView: HomeScreenViewController?
     var navigation: UINavigationController?
@@ -24,7 +24,7 @@ class HomeScreenRouter: RouterProtocol {
         presenter.interactor = interactor
         presenter.router = self
         interactor.presenter = presenter
-        rootView = view
+        
         if let nav = navigation {
             self.navigation = nav
             self.navigation?.pushViewController(view, animated: false)
@@ -34,21 +34,17 @@ class HomeScreenRouter: RouterProtocol {
         }
     }
     
+
+    
 }
 
 extension HomeScreenRouter: HomeScreenRouterProtocol {
-    func showListSugestion(vc: UIViewController) {
-        guard let contentSuggestionView = rootView?.contenListView else { return }
-        rootView?.add(child: vc, container: contentSuggestionView)
-    }
-    
-    func goDetails() {
-        
-    }
-    
 
     
-    
+    func goDetailsViewController(_ dataRecipes: DishesDTO) {
+        let router = DetailsDishRouter(data: dataRecipes)
+        router.start(navigation: navigation)
+    }
 }
 
 

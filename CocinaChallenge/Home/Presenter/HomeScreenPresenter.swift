@@ -16,12 +16,9 @@ class HomeScreenPresenter: PresenterProtocol {
     
 }
 extension HomeScreenPresenter : HomeScreenPresenterProtocol {
-    func showListSuggestion() {
-       // router?.showListSugestion(vc: view) Pendiente si da tiempo
-    }
-    
-    func goBack() {
-        
+
+    func goDetails(_ dataRecipes: DishesDTO) {
+        router?.goDetailsViewController(dataRecipes)
     }
     
     func getListRecetas() {

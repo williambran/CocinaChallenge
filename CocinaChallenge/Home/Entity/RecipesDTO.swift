@@ -16,11 +16,9 @@ struct DishesDTO: Codable, Hashable {
     var name: String?
     var description: String?
     var urlImg: String?
-    var origin: String?
-    var longitude: String?
-    var latitude: String?
+    var origin: LocationOriginDto?
     var ingredients: [String]?
-    var stepsPreparate: [String]?
+    var preparationSteps: [String]?
     
     static func == (lhs: DishesDTO, rhs: DishesDTO) -> Bool {
         return lhs.name == rhs.name

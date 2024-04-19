@@ -10,6 +10,8 @@ import UIKit
 
 
 protocol HomeScreenRouterProtocol {
-    func goDetails()
-    func showListSugestion(vc: UIViewController)
+    func goDetailsViewController(_ dataRecipes: DishesDTO)
+    var rootView: HomeScreenViewController? {get set}
+    var navigation: UINavigationController? {get set}
+    func start(navigation: UINavigationController?) 
 }

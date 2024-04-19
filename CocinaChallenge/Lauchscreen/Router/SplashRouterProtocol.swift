@@ -10,9 +10,14 @@ import UIKit
 
 protocol RouterProtocol: AnyObject {
     associatedtype T
+    
     var rootView: T? {get}
     var navigation: UINavigationController? {get}
-    func start(navigation: UINavigationController?)
+    
+    func start(navigation: UINavigationController? )
+}
+extension RouterProtocol {
+
 }
 
 

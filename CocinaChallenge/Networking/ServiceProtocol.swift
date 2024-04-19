@@ -23,7 +23,7 @@ extension ServiceProtocol {
         var urlRequest = URLRequest(url: url.absoluteURL)
         urlRequest.timeoutInterval = timeOut
         urlRequest.allHTTPHeaderFields = header
-        urlRequest.httpMethod = "GET"
+        urlRequest.httpMethod = httpMethod.rawValue
         
         print("antes de URLSession method.........")
         print("URL:", url.absoluteString)
