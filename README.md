@@ -15,7 +15,7 @@ Podremos ver la hubicacion del origen de los platillos 😋
 ## Animation
 
 ![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/SplashHome.gif)
-![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/SplashHome.gif)
+![myfile](https://raw.githubusercontent.com/williambran/CocinaChallenge/main/completeDark-ezgif.com-video-to-gif-converter.gif)
 
 
 ## Responsive
