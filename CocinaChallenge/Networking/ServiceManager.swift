@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias JSON = [String:Any]
+
 protocol ServiceManagerProtocol {
     
     func request<T: Codable>(url: String, header: [String:String],timeOut: TimeInterval, httpMethod: HTTPMethod,body: JSON,  completion: @escaping(_ response: ServiceResponse<T>) -> Void )

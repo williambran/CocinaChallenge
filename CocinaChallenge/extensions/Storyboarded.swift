@@ -20,6 +20,7 @@ extension Storyboarded where Self: UIViewController {
         let className = fullName.components(separatedBy: ".")[1]
         let storyboard = UIStoryboard(name: flow!, bundle: bundle)
         guard let vc = storyboard.instantiateViewController(withIdentifier: className) as? Self else { fatalError("")  }
+        print("Se retorna vc")
         return vc
         
     }

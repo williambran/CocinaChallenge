@@ -9,7 +9,7 @@ import Foundation
 
 
 
-protocol HomeScreenViewProtocol {
+protocol HomeScreenViewProtocol: AnyObject {
     func loadData(dishes: [DishesDTO])
     
 }

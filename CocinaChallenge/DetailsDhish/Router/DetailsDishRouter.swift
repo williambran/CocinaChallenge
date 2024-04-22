@@ -15,10 +15,11 @@ class DetailsDishRouter: RouterProtocol {
     var rootView: UIViewController?
     var navigation: UINavigationController?
     var data: DishesDTO?
-
-    init(data: DishesDTO? = nil){
+    
+    init(data:DishesDTO) {
         self.data = data
     }
+
     
     func start(navigation: UINavigationController?) {
         let view = DetailsDishViewController.instantiate(from: "DetailsDishViewController")

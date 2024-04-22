@@ -38,20 +38,19 @@ extension UIImageView {
         self.contentMode = .scaleAspectFill
         self.clipsToBounds = true
         self.backgroundColor = UIColor.lightGray
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 10
 
         
         let animation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
         animation.fromValue = 0.0
         animation.toValue = 0.9
-        animation.duration = 0.79 // Duración de la animación
+        animation.duration = 0.79
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         let randomDelay = Double.random(in: 0.0...0.5)
         animation.beginTime = CACurrentMediaTime() + randomDelay
-        animation.repeatCount = .greatestFiniteMagnitude // Repetir la animación infinitamente
-        animation.autoreverses = true // Revertir la animación automáticamente
+        animation.repeatCount = .greatestFiniteMagnitude
+        animation.autoreverses = true
         self.layer.add(animation, forKey: "animateOpacity")
-        // Asignar la animación al gradiente
 
     }
     
@@ -62,10 +61,9 @@ extension UIImageView {
             
         }
     }
-    
-
-
 }
+
+
 
 
 extension UIView {

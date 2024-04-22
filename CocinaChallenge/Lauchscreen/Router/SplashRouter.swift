@@ -46,6 +46,7 @@ extension SplashRouter: SplashRouterProtocol {
     func goHome() {
         //instanciar nuevos routers
         
+        
 
     }
     func goOnBoarding() {

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class RecetaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var coverImg: UIImageView!
     @IBOutlet weak var descriptionView: UIView!

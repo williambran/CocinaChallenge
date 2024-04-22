@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol MapInteractorProtocol {
+protocol MapInteractorProtocol: AnyObject {
     var presenter: MapInteractorOutputProtocol? {get set}
     func request()
 }

@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol StepsDishTableViewCellDelegate {
+protocol StepsDishTableViewCellDelegate: AnyObject {
     func goToMapViewControler()
 }
 
-protocol SetupUITableViewCell{
+protocol SetupUITableViewCell: AnyObject{
     func setupUI(description: String, enableBtn: Bool)
     var viewContainer: StepsDishTableViewCellDelegate? {get set}
 
@@ -21,20 +21,18 @@ class StepsDishTableViewCell: UITableViewCell , SetupUITableViewCell {
     
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var descriptionLbl: UILabel!
-    var viewContainer: StepsDishTableViewCellDelegate?
+    weak var viewContainer: StepsDishTableViewCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
-        locationBtn.backgroundColor = UIColor(named: "base_color_invertido")
-        self.backgroundColor = UIColor(named: "base_color")
-        locationBtn.titleLabel?.text = "Mapa"
         locationBtn.addRoundCorners(cornerRadius: 25)
+        locationBtn.backgroundColor = UIColor(named: "base_color_invertido")
+        locationBtn.titleLabel?.text = ""
+        self.backgroundColor = UIColor(named: "base_color")
     }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func setupUI(description: String, enableBtn: Bool) {

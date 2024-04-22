@@ -28,6 +28,9 @@ class LocationViewController: UIViewController, LocationViewDelegate, Storyboard
         super.viewWillDisappear(animated)
         
     }
+    deinit {
+        print("Se elimina LocationViewController")
+    }
     
     
     private func setupUI(){

@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 
-protocol HomeScreenRouterProtocol {
+protocol HomeScreenRouterProtocol: AnyObject {
     func goDetailsViewController(_ dataRecipes: DishesDTO)
-    var rootView: HomeScreenViewController? {get set}
+   // var rootView: UIViewController? {get set}
     var navigation: UINavigationController? {get set}
     func start(navigation: UINavigationController?) 
 }

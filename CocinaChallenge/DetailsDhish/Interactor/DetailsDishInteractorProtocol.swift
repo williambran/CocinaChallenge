@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol DetailsDishInteractorProtocol {
+protocol DetailsDishInteractorProtocol: AnyObject {
     var presenter: DetailsRecetaInteractorOutputProtocol? {get set}
     func request()
 }

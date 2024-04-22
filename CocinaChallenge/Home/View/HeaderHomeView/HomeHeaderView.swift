@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol HomeHeaderDelegate {
+protocol HomeHeaderDelegate: AnyObject {
     func search(_ query: String?)
     func didCancelSearch()
     func begingSearch()
@@ -18,13 +18,13 @@ protocol HomeHeaderDelegate {
 
 class HomeHeaderView: UIView {
     
-       @IBOutlet var headerImg: UIImageView!
-       @IBOutlet var title: UILabel!
-       @IBOutlet var searchView: UIView!
-       @IBOutlet var contentView: UIView!
+       @IBOutlet weak var headerImg: UIImageView!
+       @IBOutlet weak var title: UILabel!
+       @IBOutlet weak var searchView: UIView!
+       @IBOutlet weak var contentView: UIView!
        private var blackOverlayView: UIView?
        
-       var viewC: HomeHeaderDelegate?
+       weak var viewC: HomeHeaderDelegate?
        private var searchController = UISearchController(searchResultsController: nil)
 
     

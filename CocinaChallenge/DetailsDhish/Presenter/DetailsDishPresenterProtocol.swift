@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol DetailsDishPresenterProtocol {
+protocol DetailsDishPresenterProtocol: AnyObject {
     var dataRecipes: DishesDTO? {get set}
     func gotToMapView(data: LocationOriginDto?)
 }

@@ -12,8 +12,8 @@ class MapPresenter: PresenterProtocol , MapPresenterProtocol{
 
     
 
-    var view: MapViewProtocol?
-    var interactor: MapInteractorProtocol?
+    weak var view: MapViewProtocol?
+    weak var interactor: MapInteractorProtocol?
     var router: MapRouterProtocol?
     var dataLocation: LocationOriginDto?
     

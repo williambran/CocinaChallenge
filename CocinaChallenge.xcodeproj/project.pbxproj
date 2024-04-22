@@ -36,7 +36,6 @@
 		5C5C32D62BCF328F00DE255F /* RecipesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D52BCF328F00DE255F /* RecipesDTO.swift */; };
 		5C5C32D82BCF3B6C00DE255F /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32D72BCF3B6C00DE255F /* ServiceResponse.swift */; };
 		5C5C32DB2BCF3E5B00DE255F /* ServiceErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DA2BCF3E5B00DE255F /* ServiceErrorResponse.swift */; };
-		5C5C32DD2BCF480B00DE255F /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */; };
 		5C5C32DF2BCF624E00DE255F /* EncodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */; };
 		5C5C32E12BCF86C000DE255F /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32E02BCF86C000DE255F /* GenericResponse.swift */; };
 		5C5C32E52BCF9AAE00DE255F /* RecetasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C32E42BCF9AAE00DE255F /* RecetasParser.swift */; };
@@ -135,7 +134,6 @@
 		5C5C32D52BCF328F00DE255F /* RecipesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDTO.swift; sourceTree = "<group>"; };
 		5C5C32D72BCF3B6C00DE255F /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
 		5C5C32DA2BCF3E5B00DE255F /* ServiceErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorResponse.swift; sourceTree = "<group>"; };
-		5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingProtocol.swift; sourceTree = "<group>"; };
 		5C5C32E02BCF86C000DE255F /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		5C5C32E42BCF9AAE00DE255F /* RecetasParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasParser.swift; sourceTree = "<group>"; };
@@ -271,7 +269,6 @@
 				5C5C32E22BCF903900DE255F /* ImageService */,
 				5C5C32D92BCF3E3600DE255F /* ServiceResponse */,
 				5C5C32CF2BCF30D800DE255F /* Recetas */,
-				5C5C32DC2BCF480B00DE255F /* ServiceProtocol.swift */,
 				5C5C32DE2BCF624E00DE255F /* EncodingProtocol.swift */,
 				5C5C32E02BCF86C000DE255F /* GenericResponse.swift */,
 				5C5C32E92BD08D2D00DE255F /* ServiceManager.swift */,
@@ -821,7 +818,6 @@
 				5C5C32E12BCF86C000DE255F /* GenericResponse.swift in Sources */,
 				5C9ED62E2BD15B810089C29F /* MapInteractor.swift in Sources */,
 				5C5C32D32BCF316D00DE255F /* RecetasServiceProtocol.swift in Sources */,
-				5C5C32DD2BCF480B00DE255F /* ServiceProtocol.swift in Sources */,
 				5C4E3D8E2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift in Sources */,
 				5C4E3D7D2BCC6AB300F0B54F /* HomeScreenRouter.swift in Sources */,
 				5C9ED6302BD15BB10089C29F /* MapInteractorProtocol.swift in Sources */,

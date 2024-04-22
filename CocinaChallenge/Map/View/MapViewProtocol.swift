@@ -8,4 +8,4 @@
 import Foundation
 
 
-protocol MapViewProtocol {}
+protocol MapViewProtocol: AnyObject {}

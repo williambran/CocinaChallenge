@@ -56,7 +56,7 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     let widthScreen = UIScreen.main.bounds.width
     var numberOfColumns: CGFloat = 0
     
-    lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = { [weak self] in
        var layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         
@@ -74,11 +74,7 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
         return collection
     }()
     
-    lazy var tableView: UITableView = {
-       var tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+ 
     
     lazy var homeHeaderView = { [weak self] in
         var homeHeaderView = HomeHeaderView()
@@ -224,7 +220,7 @@ extension HomeScreenViewController: HomeHeaderDelegate {
             self?.headerAnimator?.scrolllViewBeging()
             self?.view.layoutIfNeeded()
         }) { (finish)  in
-            self.tableView.isHidden = true
+           // self.tableView.isHidden = true
         }
     }
     

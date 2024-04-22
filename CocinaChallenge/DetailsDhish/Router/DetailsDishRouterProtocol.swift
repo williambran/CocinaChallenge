@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 
-protocol DetailsDishRouterProtocol {
+protocol DetailsDishRouterProtocol: AnyObject {
     func mapRouter(data: LocationOriginDto?)
     var data: DishesDTO? {get set}
 }

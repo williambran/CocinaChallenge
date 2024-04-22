@@ -21,6 +21,9 @@ class MapViewController: UIViewController, Storyboarded, ViewProtocol {
         dataSource = presenter?.dataLocation
         setupPoints()
     }
+    deinit {
+        print("Se elimina MapViewController")
+    }
 
     // MARK: - Map
 

@@ -22,6 +22,10 @@ class SplashViewController: UIViewController, Storyboarded, ViewProtocol {
         // Do any additional setup after loading the view.
         
     }
+
+    deinit {
+        print("Se borro splash")
+    }
     
     func setup() {
         imgSplash.contentMode = .scaleAspectFill

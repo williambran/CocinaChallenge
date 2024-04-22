@@ -9,7 +9,7 @@ import Foundation
 
 class HomeScreenPresenter: PresenterProtocol {
     
-    var view: HomeScreenViewProtocol?
+    weak var view: HomeScreenViewProtocol?
     var interactor: HomeScreenInteractorProtocol?
     var router: HomeScreenRouterProtocol?
     

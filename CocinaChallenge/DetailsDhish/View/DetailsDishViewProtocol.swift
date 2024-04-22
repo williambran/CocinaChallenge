@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol DetailsDishViewProtocol {
+protocol DetailsDishViewProtocol: AnyObject {
     var dataSource: DishesDTO? {get set}
 }

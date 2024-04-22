@@ -8,11 +8,11 @@
 import Foundation
 
 
-protocol HomeScreenInteractorProtocol {
+protocol HomeScreenInteractorProtocol: AnyObject {
     var presenter: HomeScreenInteractorOutputProtocol? {get set}
     func request()
 }
 
-protocol HomeScreenInteractorOutputProtocol {
+protocol HomeScreenInteractorOutputProtocol: AnyObject {
     func resultDishes(dishes: [DishesDTO])
 }

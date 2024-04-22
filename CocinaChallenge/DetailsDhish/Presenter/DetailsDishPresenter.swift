@@ -12,11 +12,11 @@ class DetailsDishPresenter: PresenterProtocol, DetailsDishPresenterProtocol {
 
     
     
-    var view: DetailsDishViewProtocol?
-    var interactor: DetailsDishInteractorProtocol?
+    weak var view: DetailsDishViewProtocol?
+    weak var interactor: DetailsDishInteractorProtocol?
     var router: DetailsDishRouterProtocol?
-    var dataRecipes: DishesDTO?
     
+    var dataRecipes: DishesDTO?
     
     func gotToMapView(data: LocationOriginDto?) {
         router?.mapRouter(data: data)
@@ -25,3 +25,6 @@ class DetailsDishPresenter: PresenterProtocol, DetailsDishPresenterProtocol {
 }
 
 extension DetailsDishPresenter: DetailsRecetaInteractorOutputProtocol {}
+
+
+//extension DetailsDishPresenter : DetailsDishPresenterProtocol {}

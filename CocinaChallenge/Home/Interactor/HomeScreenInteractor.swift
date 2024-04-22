@@ -9,7 +9,7 @@ import Foundation
 
 
 class HomeScreenInteractor: HomeScreenInteractorProtocol {
-    var presenter: HomeScreenInteractorOutputProtocol?
+    weak var presenter: HomeScreenInteractorOutputProtocol?
     
     struct Dependencies {
         static var services: RecetasServiceProtocol = RecetasService()
