@@ -52,6 +52,8 @@ class HomeHeaderView: UIView {
          self.title.text = ""
          setupSearchController()
          setupKeyboardObservers()
+         
+         
      }
     func actualizarComponentes() {
         guard let viewOverlay = blackOverlayView else { return }

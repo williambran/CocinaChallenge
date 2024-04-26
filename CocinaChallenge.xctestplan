@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "8A2FC950-6191-4E20-833D-E8D55ADFCF34",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "areLocalizationScreenshotsEnabled" : false,
+        "uiTestingScreenshotsLifetime" : "deleteOnSuccess"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "preferredScreenCaptureFormat" : "screenshot",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CocinaChallenge.xcodeproj",
+      "identifier" : "5CBEC4C12BCA50EE0083B42E",
+      "name" : "CocinaChallenge"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CocinaChallenge.xcodeproj",
+        "identifier" : "5CBEC4D72BCA50F00083B42E",
+        "name" : "CocinaChallengeTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CocinaChallenge.xcodeproj",
+        "identifier" : "5CBEC4E12BCA50F00083B42E",
+        "name" : "CocinaChallengeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -12,11 +12,13 @@ class RecetaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var coverImg: UIImageView!
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var contentUIView: UIView!
     
     
     override func prepareForReuse() {
         super.prepareForReuse()
         coverImg.image = nil
+        contentUIView.accessibilityIdentifier = "ContentViewRecetasIndentifier"
         
     }
     

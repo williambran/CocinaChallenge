@@ -84,6 +84,7 @@ class HomeScreenViewController: UIViewController, Storyboarded, ViewProtocol {
     }()
     
     func setup() {
+        view.accessibilityIdentifier = "HomeIdentifier"
         numberOfColumns = widthScreen > 500 ? 3: 2
         self.headerConstraint?.isActive = true
         activarViewHeader()
@@ -228,7 +229,7 @@ extension HomeScreenViewController: HomeHeaderDelegate {
         guard let query = query, statusSearch != .SEARCHING else { return }
         self.searchingFlag = true
         statusSearch = .SEARCHING
-        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline:  .now() + 0.1) { [weak self] in
+        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline:  .now() ) { [weak self] in
             self?.statusSearch = .SEARCHED
             guard let searching = self?.searchingFlag, searching else {return}
             self?.searchingFlag = false

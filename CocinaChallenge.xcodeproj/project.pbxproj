@@ -85,6 +85,9 @@
 		5CBEC50A2BCB71200083B42E /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC5092BCB71200083B42E /* SplashViewProtocol.swift */; };
 		5CBEC50C2BCB73A30083B42E /* SplashInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC50B2BCB73A30083B42E /* SplashInteractorProtocol.swift */; };
 		5CBEC50E2BCB73C20083B42E /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC50D2BCB73C20083B42E /* SplashInteractor.swift */; };
+		5CD86B2F2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD86B2E2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift */; };
+		5CD86B302BDB7DFC0081DE7E /* AssessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD86B2E2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift */; };
+		5CD86B362BDB8DDF0081DE7E /* DetailsDishUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD86B352BDB8DDF0081DE7E /* DetailsDishUITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +190,9 @@
 		5CBEC5092BCB71200083B42E /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
 		5CBEC50B2BCB73A30083B42E /* SplashInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorProtocol.swift; sourceTree = "<group>"; };
 		5CBEC50D2BCB73C20083B42E /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		5CD86B2E2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessibilityIdentifier.swift; sourceTree = "<group>"; };
+		5CD86B322BDB816D0081DE7E /* CocinaChallenge.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CocinaChallenge.xctestplan; sourceTree = "<group>"; };
+		5CD86B352BDB8DDF0081DE7E /* DetailsDishUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDishUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				5C9ED6402BD2422F0089C29F /* Location */,
+				5CD86B2E2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -529,6 +536,7 @@
 		5CBEC4B92BCA50EE0083B42E = {
 			isa = PBXGroup;
 			children = (
+				5CD86B322BDB816D0081DE7E /* CocinaChallenge.xctestplan */,
 				5CBEC4C42BCA50EF0083B42E /* CocinaChallenge */,
 				5CBEC4DB2BCA50F00083B42E /* CocinaChallengeTests */,
 				5CBEC4E52BCA50F00083B42E /* CocinaChallengeUITests */,
@@ -581,7 +589,8 @@
 		5CBEC4E52BCA50F00083B42E /* CocinaChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */,
+				5CD86B342BDB8D8A0081DE7E /* HomeCocinaUITests */,
+				5CD86B332BDB8D740081DE7E /* DetailsDishUITests */,
 				5CBEC4E82BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift */,
 			);
 			path = CocinaChallengeUITests;
@@ -644,6 +653,22 @@
 				5CBEC5032BCA8FE30083B42E /* SplashRouterProtocol.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		5CD86B332BDB8D740081DE7E /* DetailsDishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CD86B352BDB8DDF0081DE7E /* DetailsDishUITest.swift */,
+			);
+			path = DetailsDishUITests;
+			sourceTree = "<group>";
+		};
+		5CD86B342BDB8D8A0081DE7E /* HomeCocinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEC4E62BCA50F00083B42E /* CocinaChallengeUITests.swift */,
+			);
+			path = HomeCocinaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -821,6 +846,7 @@
 				5C4E3D8E2BCD114000F0B54F /* HomeHeaderCollapsingAnimator.swift in Sources */,
 				5C4E3D7D2BCC6AB300F0B54F /* HomeScreenRouter.swift in Sources */,
 				5C9ED6302BD15BB10089C29F /* MapInteractorProtocol.swift in Sources */,
+				5CD86B2F2BDB7B3C0081DE7E /* AssessibilityIdentifier.swift in Sources */,
 				5C4E3D7F2BCC6ACF00F0B54F /* HomeScreenRouterProtocol.swift in Sources */,
 				5C9ED6262BD155FF0089C29F /* MapViewController.swift in Sources */,
 				5C5C32D82BCF3B6C00DE255F /* ServiceResponse.swift in Sources */,
@@ -866,6 +892,8 @@
 			files = (
 				5CBEC4E72BCA50F00083B42E /* CocinaChallengeUITests.swift in Sources */,
 				5CBEC4E92BCA50F00083B42E /* CocinaChallengeUITestsLaunchTests.swift in Sources */,
+				5CD86B362BDB8DDF0081DE7E /* DetailsDishUITest.swift in Sources */,
+				5CD86B302BDB7DFC0081DE7E /* AssessibilityIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,7 +1059,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1062,7 +1090,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1125,6 +1153,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QNXMD5AL4;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1143,6 +1172,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QNXMD5AL4;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.CocinaChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -30,7 +30,7 @@ class SplashViewController: UIViewController, Storyboarded, ViewProtocol {
     func setup() {
         imgSplash.contentMode = .scaleAspectFill
         imgSplash.addRoundCorners(cornerRadius: 100)
-
+        view.accessibilityIdentifier = "SplashIdentifier"
         imgSplash.image = UIImage(named: "App_Icon")
     }
     

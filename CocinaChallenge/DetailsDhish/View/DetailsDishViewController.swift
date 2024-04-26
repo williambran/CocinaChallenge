@@ -18,6 +18,7 @@ class DetailsDishViewController: UIViewController, Storyboarded, ViewProtocol, D
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = AssessibilityIdentifier.detailsDishViewIdentifier
         view.backgroundColor = UIColor(named: "base_color")
         navigationController?.isNavigationBarHidden = false
         dataSource = presenter?.dataRecipes

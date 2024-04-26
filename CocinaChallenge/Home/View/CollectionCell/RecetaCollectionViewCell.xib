@@ -58,6 +58,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="344" height="355"/>
             <connections>
+                <outlet property="contentUIView" destination="Cfl-e4-79E" id="mjN-wV-5Ya"/>
                 <outlet property="coverImg" destination="CT5-FA-fji" id="oCy-su-8YP"/>
                 <outlet property="descriptionView" destination="kzK-f0-FE6" id="9Cd-kv-cXz"/>
                 <outlet property="nameLbl" destination="RsT-QO-lma" id="Cp2-dR-HSq"/>
